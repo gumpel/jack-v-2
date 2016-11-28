@@ -1,0 +1,126 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+.jack-v {
+  background: #CFCDE1;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Source Code Pro', monospace;
+  h3 {
+    strong {
+      font-weight: 400;
+    }
+    span {
+      font-weight: 300;
+    }
+  }
+  .jform {
+    padding-top: calc(50vh - 180px);
+    .field {
+      .jlabel {
+        position: relative;
+        font-size: 20px;
+        color: #70707e;
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f105";
+          position: absolute;
+          font-size: 35px;
+          left: -40px;
+          top: -10px;
+          color: #333;
+        }
+      }
+      .jinput {
+        position:relative;
+        display: inline-block;
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f105";
+          position: absolute;
+          font-size: 35px;
+          left: -40px;
+          top: 0px;
+          color: #333;
+        }
+        input {
+          font-size: 20px;
+          background: none;
+          border: solid 2px #33333C;
+          color: #70707e;
+          padding: 10px 5px 5px 0px;
+          width: 390px;
+          font-size: 18px;
+          display: inline-block;
+          position: relative;
+          &:focus,
+          &:active {
+            outline: none;
+          }
+          &[type="text"],
+          &[type="email"] {
+            border: none;
+            border-bottom: solid 2px #33333C;
+            position: relative;
+          }
+        }
+      }
+      .jbutton {
+        display:inline-block;
+        font-size:20px;
+        background:#CFCDE1;
+        padding: 5px 10px;
+        position:relative;
+        color:transparent;
+        visibility: hidden;        
+        transition:opacity 0.3s ease-in-out 0.4s;
+        float: right;
+        margin-top: 6px;
+        cursor: pointer;
+        > span {
+          opacity:0;
+        }        
+        &:before {
+        content: "[ ";
+        position: absolute;
+        left:calc(40% - 10px);
+        color:#333;
+        font-size:1.3em;
+        top:-1px;        
+      }
+        &:after {
+        content: " ]";
+        position: absolute;
+        right:calc(40% - 10px);
+        color:#333;
+        font-size:1.3em;
+        top:-1px;  
+      }
+      &.activate {
+        visibility: visible;
+        color:#333;
+        opacity:1;
+
+        > span {
+          opacity:1;
+          transition:opacity 0.3s ease-in-out 0.2s;
+        }
+        &:before {
+          opacity:1;
+          left:-10px;
+          transition: left 0.27s ease-in-out;
+        }
+                &:after {
+          opacity:1;
+          right:-10px;
+          transition: right 0.27s ease-in-out;
+        }
+        }
+
+      }
+
+    }
+  }
+}
