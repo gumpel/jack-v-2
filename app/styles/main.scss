@@ -19,19 +19,16 @@ $icon-font-path: '../fonts/';
         }
     }
     .uppercase {
-      text-transform: uppercase;
+        text-transform: uppercase;
     }
-
     .j-chosen-section {
-      display:none;
+        display: none;
     }
-
     .jform {
         padding-top: calc(50vh - 180px);
-
         .field {
             margin-top: 20px;
-             transition: opacity 0.4s ease-in, margin-top 0.23s ease-in-out;
+            transition: opacity 0.4s ease-in, margin-top 0.23s ease-in-out;   
             .jlabel {
                 position: relative;
                 font-size: 24px;
@@ -127,18 +124,16 @@ $icon-font-path: '../fonts/';
                 }
             }
             .jinput-textarea {
-              //background: red;
+                //background: red;
                 textarea {
-                  resize:none;
-                  overflow: hidden;
-                  outline: none;
-                  background:transparent;
-                  border: solid 2px #33333C
+                    resize: none;
+                    overflow: hidden;
+                    outline: none;
+                    background: transparent;
+                    border: solid 2px #33333C
                 }
             }
-
-
-            .jbutton-centred {               
+            .jbutton-centred {
                 text-align: center;
                 >.jbutton {
                     clear: both;
@@ -161,7 +156,6 @@ $icon-font-path: '../fonts/';
                 > span {
                     opacity: 0;
                 }
-                
                 &:before {
                     content: "[ ";
                     position: absolute;
