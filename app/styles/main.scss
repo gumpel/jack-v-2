@@ -5,9 +5,10 @@ $icon-font-path: '../fonts/';
 // endbower
 .jack-v {
   background: #CFCDE1;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   font-family: 'Source Code Pro', monospace;
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
   h3 {
     strong {
       font-weight: 400;
@@ -19,9 +20,10 @@ $icon-font-path: '../fonts/';
   .jform {
     padding-top: calc(50vh - 180px);
     .field {
+      margin-top:20px;
       .jlabel {
         position: relative;
-        font-size: 20px;
+        font-size: 24px;
         color: #70707e;
         &:before {
           font-family: "FontAwesome";

@@ -1,8 +1,9 @@
-$('.jinput').change(function(e) {
-	$(this).siblings('div.jbutton').addClass('activate')
-	console.log('ddd');
+$('#jform-1 .jinput input').on('change keyup keydown keypress',function() {
+	$(this).parent().siblings('div.jbutton').addClass('activate')
+	console.log($(this).val());
 });
-$('.jinput').on('change keyup keydown keypress',function(e) {
-	$(this).siblings('div.jbutton').addClass('activate')
-	console.log('ddd');
-});
+
+$('#jform-1 .jbutton').on('click', function(){
+	$('#jform .jname').text($('#jform-1 .jinput input').val());
+	console.log($('#jform-1 .jinput input').val())
+})
