@@ -1,5 +1,5 @@
 var formObj = {
-    "jform-1": '<form class="jform text-left" id="jform">< div class = "field" id = "jform-1" ><div class = "jlabel" > Cześć, nazywam się Robert i witam Cię na mojej stronie internetowej.Jak masz na Imię ? </div> < div class = "jinput" >< input type = "text" name = "name" id = "jname" / >< /div> < div class = "jbutton" > < span > Zatwierdź < /span></div >< /div>'
+    "jform-1": '< div class = "field" id = "jform-1" ><div class = "jlabel" > Cześć, nazywam się Robert i witam Cię na mojej stronie internetowej.Jak masz na Imię ? </div> < div class = "jinput" >< input type = "text" name = "name" id = "jname" / >< /div> < div class = "jbutton" > < span > Zatwierdź < /span></div >< /div>'
 }
 
 
@@ -41,6 +41,18 @@ prev.on('click', function() {
     current.hide();
     next = current;
     current = prev;
+})
+
+$('.field').on('click', function() {
+    if ($(this).hasClass('prev') && !$(this).is('#jform-1')) {
+        $('.field').removeClass('prev');
+        prev.css({ 'margin-top': 0 });
+        showNext(prev);
+        current.hide();
+        next = current;
+        current = prev;
+
+    }
 })
 
 
