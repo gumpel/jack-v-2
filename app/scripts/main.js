@@ -120,7 +120,7 @@ function mapCurrent(current) {
     $(button).on('click', function() {
         console.log(dataNext);
         if (dataNext ==='#jform-end') {
-        	$('#jform').submit();
+        	//$('#jform').submit();
         }
         showNext(dataNext);
         $(this).unbind('click');
