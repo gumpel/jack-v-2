@@ -8,7 +8,7 @@ $icon-font-path: '../fonts/';
     min-height: 100vh;
     width: 100%;
     font-family: 'Source Code Pro', monospace;
-    font-family: Courier, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    //font-family: Courier, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
     color: #2e3040;
     h3 {
         strong {
@@ -26,12 +26,20 @@ $icon-font-path: '../fonts/';
     }
     .jform {
         padding-top: calc(50vh - 180px);
+        transition: margin-top 0.43s ease-in-out; 
         .field {
             margin-top: 20px;
-            transition: opacity 0.4s ease-in, margin-top 0.23s ease-in-out;   
+            transition: opacity 0.4s ease-in;
+            &:not(:last-child){
+              cursor: pointer;
+              opacity: 0.1;
+              &:hover {
+                opacity: 0.3;
+              }
+            }  
             .jlabel {
                 position: relative;
-                font-size: 24px;
+                font-size: 20px;
                 color: #2e3040;
                 margin-bottom: 20px;
                 &:before {
@@ -87,10 +95,10 @@ $icon-font-path: '../fonts/';
                 label {
                     cursor: pointer;
                     position: relative;
-                    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+                   // font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
                     font-weight: 300;
-                    display: block;
-                    margin: 10px;
+                    display: inline-block;
+                    margin: 10px 20px;
                     font-size: 14px;
                     transition: margin 0.23s ease-in, opacity 0.2s ease-out;
                     &:before {
@@ -99,7 +107,7 @@ $icon-font-path: '../fonts/';
                         left: -15px;
                         color: #333;
                         font-size: 1.4em;
-                        top: -4px;
+                        top: -5px;
                         transition: all 0.17s ease-in-out;
                     }
                     &:after {
@@ -108,7 +116,7 @@ $icon-font-path: '../fonts/';
                         right: -15px;
                         color: #333;
                         font-size: 1.4em;
-                        top: -4px;
+                        top: -5px;
                         transition: all 0.17s ease-in-out;
                     }
                 }
