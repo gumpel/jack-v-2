@@ -39,7 +39,8 @@ $icon-font-path: '../fonts/';
             }  
             .jlabel {
                 position: relative;
-                font-size: 20px;
+                font-size: 16px;
+                font-weight: 300;
                 color: #2e3040;
                 margin-bottom: 20px;
                 &:before {

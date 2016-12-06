@@ -2,8 +2,8 @@ var jformObj = {
     name: 'Jane',
     field: {
         '#jform-1': {
-            html: '<div class="field" id="jform-1"><div class="jlabel">Cześć, nazywam się Robert i witam Cię na mojej stronie internetowej. Jak masz na Imię ?</div><div class="jinput"><input type="text" name="name" id="jname" /></div><div class="jbutton" data-next="#jform-1-1"><span>Zatwierdź</span></div></div>',
-            next: { 'jbutton': '#jform-1-1' },
+            html: '<div class="field" id="jform-1"><div class="jlabel">Cześć, nazywam się Robert i witam Cię na mojej stronie internetowej. Jak masz na Imię ?</div><div class="jinput"><input type="text" name="name" id="jname" autocomplete="off"/></div><div class="jbutton" data-next="#jform-1-1"><span>Zatwierdź</span></div></div>',
+            next: { 'jbutton': '#jform-1-1'},
             nextType: 'jbutton'
         },
         '#jform-1-1': {
@@ -17,7 +17,7 @@ var jformObj = {
             nextType: 'jbutton'
         },
         '#jform-sites-1': {
-            html: '<div class="field" id="jform-sites-1"><div class="jlabel">Zostaw mi do siebie telefon lub e-mail, gdy tylko przeanalizuję Twój pomysł, odezwę się do Ciebie <span class="jname uppercase">JAN</span>!</div><div class="jinput"><input type="text" name="phoneemail" /></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
+            html: '<div class="field" id="jform-sites-1"><div class="jlabel">Zostaw mi do siebie telefon lub e-mail, gdy tylko przeanalizuję Twój pomysł, odezwę się do Ciebie <span class="jname uppercase">JAN</span>!</div><div class="jinput"><input type="text" name="phoneemail"  autocomplete="off"/></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
             next: { 'jbutton': '#jform-end' },
             nextType: 'jbutton'
         },
@@ -27,7 +27,7 @@ var jformObj = {
             nextType: 'jinput-radio'
         },
         '#jform-position-1': {
-            html: '<div class="field" id="jform-position-1"><div class="jlabel">Podaj adres strony / domeny:</div><div class="jinput"><input type="text" name="name" /></div><div class="jbutton" data-next="#jform-position-2"><span>Zatwierdź</span></div></div>',
+            html: '<div class="field" id="jform-position-1"><div class="jlabel">Podaj adres strony / domeny:</div><div class="jinput"><input type="text" name="name"  autocomplete="off"/></div><div class="jbutton" data-next="#jform-position-2"><span>Zatwierdź</span></div></div>',
             next: { 'jbutton': '#jform-position-2' },
             nextType: 'jbutton'
         },
@@ -37,17 +37,17 @@ var jformObj = {
             nextType: 'jinput-radio'
         },
         '#jform-position-2-1': {
-            html: '<div class="field" id="jform-position-2-1"><div class="jlabel">Wymień je proszę:</div><div class="jinput"><input type="text" name="name" /></div><div class="jbutton" data-next="#jform-position-2-1-2"><span>Zatwierdź</span></div></div>',
+            html: '<div class="field" id="jform-position-2-1"><div class="jlabel">Wymień je proszę:</div><div class="jinput"><input type="text" name="name" autocomplete="off" /></div><div class="jbutton" data-next="#jform-position-2-1-2"><span>Zatwierdź</span></div></div>',
             next: { 'jbutton': '#jform-position-2-1-2' },
             nextType: 'jbutton'
         },
         '#jform-position-2-1-2': {
-            html: '<div class="field" id="jform-position-2-1-2"><div class="jlabel">Zostaw telefon lub e-mail do siebie abym mógł się z Tobą skontaktować w tej sprawie</div><div class="jinput"><input type="text" name="phoneemail" /></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
+            html: '<div class="field" id="jform-position-2-1-2"><div class="jlabel">Zostaw telefon lub e-mail do siebie abym mógł się z Tobą skontaktować w tej sprawie</div><div class="jinput"><input type="text" name="phoneemail" autocomplete="off"/></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
             next: { 'jbutton': '#jform-end' },
             nextType: 'jbutton'
         },
         '#jform-position-2-2': {
-            html: '<div class="field" id="jform-position-2-2"><div class="jlabel">W takim razie zostaw telefon lub e-mail do siebie abym mógł się z Tobą skontaktować w tej sprawie</div><div class="jinput"><input type="text" name="phoneemail" /></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
+            html: '<div class="field" id="jform-position-2-2"><div class="jlabel">W takim razie zostaw telefon lub e-mail do siebie abym mógł się z Tobą skontaktować w tej sprawie</div><div class="jinput"><input type="text" name="phoneemail" autocomplete="off" /></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
             next: { 'jbutton': '#jform-end' },
             nextType: 'jbutton'
         },
@@ -62,12 +62,12 @@ var jformObj = {
             nextType: 'jbutton'
         },
         '#jform-diffrent-1-1': {
-            html: '<div class="field" id="jform-diffrent-1-1"><div class="jlabel">Zostaw telefon lub e-mail do siebie abym mógł się z Tobą skontaktować w tej sprawie</div><div class="jinput"><input type="text" name="phoneemail" /></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
+            html: '<div class="field" id="jform-diffrent-1-1"><div class="jlabel">Zostaw telefon lub e-mail do siebie abym mógł się z Tobą skontaktować w tej sprawie</div><div class="jinput"><input type="text" name="phoneemail" autocomplete="off" /></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
             next: { 'jbutton': '#jform-end' },
             nextType: 'jbutton'
         },
         '#jform-diffrent-2': {
-            html: '<div class="field" id="jform-diffrent-2"><div class="jlabel">W takim razie zostaw telefon lub e-mail do siebie abym mógł się z Tobą skontaktować w tej sprawie</div><div class="jinput"><input type="text" name="phoneemail" /></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
+            html: '<div class="field" id="jform-diffrent-2"><div class="jlabel">W takim razie zostaw telefon lub e-mail do siebie abym mógł się z Tobą skontaktować w tej sprawie</div><div class="jinput"><input type="text" name="phoneemail" autocomplete="off"/></div><div class="jbutton" data-next="#jform-end"><span>Zatwierdź</span></div></div>',
             next: { 'jbutton': '#jform-end' },
             nextType: 'jbutton'
         },
@@ -88,7 +88,6 @@ mapCurrent(current);
 
 function mapCurrent(current) {
     console.log(pathArr);
-
     var dataNext = dataNext(current);
     $('#jform').append(jformObj.field[current].html);
     if (jformObj.field[current].html.indexOf('jname') !== -1) {
@@ -120,9 +119,12 @@ function mapCurrent(current) {
 
     $(button).on('click', function() {
         console.log(dataNext);
+        if (dataNext ==='#jform-end') {
+        	$('#jform').submit();
+        }
         showNext(dataNext);
-        //$(this).unbind('click');
-        //$(this).parent().parent().find('.jinput-radio').unbind('click');
+        $(this).unbind('click');
+        $(this).parent().parent().find('.jinput-radio').unbind('click');
         if (current === '#jform-1') {
 
         };
@@ -135,7 +137,7 @@ function mapCurrent(current) {
     }
 
     if (current === '#jform-1') {
-    	console.log('focus')
+
         $(current + ' .jinput input').focus();
         $(current + ' .jinput input').on('change keyup keydown keypress', function() {
             $(button).addClass('activate');
@@ -183,7 +185,8 @@ function showNext(e) {
     //     }
     // })
 
-    $('.jform').css('margin-top', -25 * (pathArr.length - 1) + 'vh');
+    // $('.jform').css('margin-top', -25 * (pathArr.length - 1) + 'vh');
+    $('#jform').css('margin-top', -$('#jform').height() + $('#jform .field:last-child').height());
 }
 
 // });
