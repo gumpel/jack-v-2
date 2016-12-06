@@ -144,10 +144,10 @@ function mapCurrent(current) {
             jformObj.name = $(this).val();
         });
     }
-    if (current !== '#jform-1' && current !== "#jform-sites" && jformObj.field[current].nextType === 'jbutton') {
+    if (current !== '#jform-1' && current !== '#jform-sites' && jformObj.field[current].nextType === 'jbutton') {
         $(button).addClass('activate');
     }
-    if (current === "#jform-sites") {
+    if (current === '#jform-sites') {
         $(current + ' textarea').on('input propertychange', function() {
             $(this).parent().siblings('.jbutton-centred').find('div.jbutton').addClass('activate');
         });
